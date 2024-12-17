@@ -1,0 +1,38 @@
+  .Top-Bar {
+    color: rgb(35, 81, 174);
+    background-color: rgba(35, 81, 174, 0.242);
+    border-bottom: 3px black solid;
+    height: 30%;
+  }
+  
+  .Left-Bar {
+    width: 50%;
+    left: 0%;
+    position: absolute;
+    background-color: rgba(137, 43, 226, 0.301);
+    color: rgb(35, 81, 174);
+    border: 3px black solid;
+    padding: 4px;
+    height: 60%;
+    top: 100px;
+  }
+  
+  .Right-Bar {
+    height: 60%;
+    top: 100px;
+    position: absolute;
+    width: 50%;
+    left: 52%;
+    background-color: rgba(0, 255, 255, 0.304);
+    color: rgb(35, 81, 174);
+    border: 3px black solid;
+    padding: 4px;
+  }
+  
+  .BigBoy {
+    display: none;
+  }
+  img {
+    height: 400px;
+  }
+  

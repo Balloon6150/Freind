@@ -1,0 +1,25 @@
+<div class="Intro">
+    <h2 id="Time">Hello</h2>
+    <p>Welcome to my clicker game. This is pretty self-explanatory.</p>
+    <button>Intro</button>
+    <button class="Init" onclick="toggleBigBoy()">Initialize</button>
+  </div>
+  <div class="BigBoy">
+    <div class="Top-Bar">
+      <p>Total Blåhaj = </p>
+      <p id="amount"></p>
+    </div>
+    <div class="Left-Bar">
+      <img id="Hello1234" onclick=updateclicks() src="https://noras-secret-cdn.hackclub.dev/shop/blahaj.png">
+    </div>
+    <div class="Right-Bar">
+      <h3>Upgrades:</h3>
+      <h4> Blåhajs per Click</h4>
+      <p id="ShownPerSecond"> You only get 1 Blåhaj per second</p>
+      <button onclick="sharkmore()" id="Upgrade1"> Upgrade how many Blåhajs per click</button>
+      <h4> Auto Clickers</h4>
+      <p id="ShownAutopersec"> You currently have 0 Autoclickers</p>
+      <Button onclick="automore()" id="autoclickers"> Buy 1 AutoClicker</Button>
+    </div>
+    <div class="Bottom-Bar"></div>
+  </div>

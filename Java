@@ -1,0 +1,57 @@
+const exactdate = new Date();
+const Hours = exactdate.getHours();
+if (Hours == 12) {
+  document.getElementById("Time").innerHTML = "Good Evening";
+} else if (Hours < 12) {
+  document.getElementById("Time").innerHTML = "Good Morning";
+} else if (Hours < 19) {
+  document.getElementById("Time").innerHTML = "Good Afternoon";
+} else {
+  document.getElementById("Time").innerHTML = "Good Night";
+}
+function toggleBigBoy() {
+  const bigBoy = document.querySelector(".BigBoy");
+  const Intro = document.querySelector(".Intro");
+  Intro.style.display =
+    Intro.style.display === "none" || Intro.style.display === ""
+      ? "none"
+      : "block";
+  bigBoy.style.display =
+    bigBoy.style.display === "none" || bigBoy.style.display === ""
+      ? "block"
+      : "none";
+}
+var Sharks = 1;
+var SharksperClick = 1;
+const Amount = document.getElementById("amount");
+const Autobutton = document.getElementById("autoclickers");
+const morebutton = document.getElementById("Upgrade1");
+const ShownPerSecond = document.getElementById("ShownPerSecond")
+function sharkmore(){
+    SharksperClick += 1
+    Sharks -= 50;
+    Amount.innerHTML = Sharks;
+    ShownPerSecond.innerHTML = SharksperClick;
+}
+var AutoClicksper = 0;
+const ShownAutopersec = document.getElementById("ShownAutopersec")
+function automore(){
+    AutoClicksper += 1
+    Sharks -= 50;
+    Amount.innerHTML = Sharks;
+    ShownAutopersec.innerHTML = SharksperClick;
+}
+function updateclicks() {
+  Sharks += SharksperClick;
+  Amount.innerHTML = Sharks;
+}
+const SharkIMG = document.getElementById("Hello1234")
+function Squish() {
+}
+function myFunction() {
+   Sharks += AutoClicksper;
+   Amount.innerHTML = Sharks;
+}
+
+// Call myFunction every 1000 milliseconds (1 second)
+setInterval(myFunction, 1000);

@@ -43,10 +43,11 @@ function automore(){
 }
 function updateclicks() {
   Sharks += SharksperClick;
-  Amount.innerHTML = Sharks;
+  Amount.innerHTML = Sharks
 }
 const SharkIMG = document.getElementById("Hello1234")
 function Squish() {
+  SharkIMG.style.height = "420px";
 }
 function myFunction() {
    Sharks += AutoClicksper;
